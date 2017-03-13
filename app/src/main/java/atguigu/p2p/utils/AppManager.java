@@ -64,4 +64,6 @@ public class AppManager {
         return stack.size();
     }
 
+    public void remove(Activity activity) {
+    }
 }

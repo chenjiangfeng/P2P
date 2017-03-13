@@ -111,7 +111,8 @@ public class WelcomeActivity extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        AppManager.getInstance().removeCurrentActivity();
+//        AppManager.getInstance().removeCurrentActivity();
+        AppManager.getInstance().remove(this);
 
     }
 }

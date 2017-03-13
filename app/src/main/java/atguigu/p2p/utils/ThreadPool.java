@@ -9,6 +9,8 @@ import java.util.concurrent.Executors;
 
 public class ThreadPool {
 
+
+
     private ThreadPool(){}
 
     private  static  ThreadPool threadPool = new ThreadPool();
@@ -20,6 +22,10 @@ public class ThreadPool {
     private  ExecutorService executorService = Executors.newCachedThreadPool();
 
     private ExecutorService getEXecutor(){
+        return executorService;
+    }
+
+    public ExecutorService getGlobalThread(){
         return executorService;
     }
         /*

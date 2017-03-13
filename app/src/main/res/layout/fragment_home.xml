@@ -7,7 +7,7 @@
 
     <!--<include layout="@layout/base_head"></include>-->
 
-    <ScrollView
+    <atguigu.p2p.utils.MyScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -21,10 +21,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="150dp">
 
-                <!--<com.youth.banner.Banner-->
-                <!--android:id="@+id/banner"-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="match_parent" />-->
+                <com.youth.banner.Banner
+                    android:id="@+id/banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
 
                 <!--<android.support.v4.view.ViewPager
                     android:id="@+id/vp_home"
@@ -111,12 +111,13 @@
             <!--atguigu:max="100"-->
             <!--atguigu:progress="70"-->
             <!--/>-->
-            <!--<com.p2pinvest002.ui.MyProgressBar
+            <atguigu.p2p.utils.MyProgress
+                android:id="@+id/home_progress"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
-                android:layout_marginTop="10dp">
+                atguigu:sweepArc="160">
 
-            </com.p2pinvest002.ui.MyProgressBar>-->
+            </atguigu.p2p.utils.MyProgress>
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -168,6 +169,6 @@
         </LinearLayout>
 
 
-    </ScrollView>
+    </atguigu.p2p.utils.MyScrollView>
 
 </LinearLayout>
